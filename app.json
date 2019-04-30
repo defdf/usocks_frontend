@@ -1,0 +1,20 @@
+{
+  "name": "React Demo Store",
+  "description": "React demo store built with the moltin JavaScript SDK",
+  "logo": "https://www.moltin.com/img/icons/favicons/apple-touch-icon.png",
+  "repository": "https://github.com/moltin/react-demo-store",
+  "keywords": ["moltin", "react", "ecommerce"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/mars/create-react-app-buildpack.git"
+    }
+  ],
+  "success_url": "/",
+  "env": {
+    "REACT_APP_MOLTIN_CLIENT_ID": {
+      "description":
+        "The client_id is the unique ID associated with your store. You'll find this on the welcome screen of your moltin Dashboard.",
+      "value": "j6hSilXRQfxKohTndUuVrErLcSJWP15P347L6Im0M4"
+    }
+  }
+}
