@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+
 import MobileNav from '../global/Mobile/MobileNav';
 import CartHeader from './CartHeader';
 import CartItems from './CartItems';
@@ -78,7 +79,7 @@ class Cart extends Component {
                 <div className="content">
                   <div className="cart-listing empty">
                     <p>
-                      Oh no, looks like you don't love lamp, as your cart is
+                      Oh no, looks like you don't love socks, as your cart is
                       empty.
                     </p>
                     <Link className="btn" to="/products">
