@@ -8,6 +8,7 @@ const HeaderNav = () => (
     <nav className="primary-nav light">
       <Link to="/products">Products</Link>
       <Link to="/styles">Styles</Link>
+        <Link to="/userform">Register User</Link>
     </nav>
     <div className="logo light">
       <Link to="/" className="logo-link">

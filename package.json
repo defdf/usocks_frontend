@@ -3,14 +3,16 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8013 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@bit/react-bootstrap.react-bootstrap.form": "^1.0.0",
     "@moltin/sdk": "^3.18.1",
+    "axios": "^0.18.0",
     "history": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -24,12 +26,21 @@
     "redux-thunk": "2.2.0"
   },
   "devDependencies": {
+    "@bit/react-bootstrap.react-bootstrap.button": "^1.0.0",
+    "@bit/react-bootstrap.react-bootstrap.internal.style-links": "^1.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
     "prettier": "1.10.2",
     "redux-logger": "^3.0.6"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "git add"]
-  }
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+
+  "proxy": "http://localhost:1337"
+
+
 }

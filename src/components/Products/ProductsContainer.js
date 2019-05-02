@@ -30,6 +30,7 @@ class ProductsContainer extends Component {
   render() {
     const { products } = this.props;
 
+
     if (products) {
       return (
         <div>

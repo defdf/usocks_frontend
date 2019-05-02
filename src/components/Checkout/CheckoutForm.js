@@ -116,7 +116,7 @@ class CheckoutForm extends Component {
             <form
               className="checkout-form"
               noValidate
-              onSubmit={this.props.handleSubmit(this.mySubmit)}
+
               onKeyDown={e => {
                 this.handleKeyDown(e);
               }}>

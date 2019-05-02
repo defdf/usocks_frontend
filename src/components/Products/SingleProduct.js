@@ -28,6 +28,8 @@ class SingleProduct extends Component {
 
     var product = productArray[0];
 
+
+
     var updateQuantity = quantity => {
       this.props.dispatch(dispatch => {
         dispatch({ type: UPDATE_QUANTITY, payload: quantity });

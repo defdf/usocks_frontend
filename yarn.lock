@@ -16,6 +16,183 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@babel/runtime@^7.1.2":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.4.tgz#dc2e34982eb236803aa27a07fea6857af1b9171d"
+  integrity sha512-w0+uT71b6Yi7i5SE0co4NioIpSYS6lLiXvCzWzGSKvpK5vdQtCbICHMj+gbAKAOtxiV6HsVh/MBdaF9EQ6faSg==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
+"@bit/react-bootstrap.react-bootstrap.button@^1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.button/-/react-bootstrap.react-bootstrap.button-1.0.0.tgz#d9d20b613ff15239a279ef4bd5b7e2998a14b67d"
+  integrity sha1-2dILYT/xUjmiee9L1bfimYoUtn0=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.safe-anchor" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.col@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.col/-/react-bootstrap.react-bootstrap.col-1.0.0.tgz#fed25e08b2a309c14017306563163cc6642c1c61"
+  integrity sha1-/tJeCLKjCcFAFzBlYxY8xmQsHGE=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.create-chained-function@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.create-chained-function/-/react-bootstrap.react-bootstrap.create-chained-function-1.0.0.tgz#9323b0b32bb9e37bd805f8fb2f0e2ae42bee8ee9"
+  integrity sha1-kyOwsyu543vYBfj7Lw4q5Cvujuk=
+
+"@bit/react-bootstrap.react-bootstrap.create-with-bs-prefix@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.create-with-bs-prefix/-/react-bootstrap.react-bootstrap.create-with-bs-prefix-1.0.0.tgz#deae038c1e59fca9bfac309494bd97af5892e221"
+  integrity sha1-3q4DjB5Z/Km/rDCUlL2Xr1iS4iE=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    dom-helpers "^3.4.0"
+
+"@bit/react-bootstrap.react-bootstrap.feedback@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.feedback/-/react-bootstrap.react-bootstrap.feedback-1.0.0.tgz#e3b55d2ca51dae37f536547dcdbc32ebe52999fe"
+  integrity sha1-47VdLKUdrjf1NlR9zbwy6+Upmf4=
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.form-check-input@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-check-input/-/react-bootstrap.react-bootstrap.form-check-input-1.0.0.tgz#e5cc9fe665a61713146c20655e241f2ddcd93323"
+  integrity sha1-5cyf5mWmFxMUbCBlXiQfLdzZMyM=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.form-context" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+
+"@bit/react-bootstrap.react-bootstrap.form-check-label@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-check-label/-/react-bootstrap.react-bootstrap.form-check-label-1.0.0.tgz#8adab6f5b139dfcf5e3e3a2d2f3ba71a0971f6d1"
+  integrity sha1-itq29bE5389ePjotLzunGglx9tE=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.form-context" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+
+"@bit/react-bootstrap.react-bootstrap.form-check@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-check/-/react-bootstrap.react-bootstrap.form-check-1.0.0.tgz#1c88db45b51ad7eeb4f9cee76d0cbd7758bda717"
+  integrity sha1-HIjbRbUa1+60+c7nbQy9d1i9pxc=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.feedback" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-check-input" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-check-label" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-context" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+
+"@bit/react-bootstrap.react-bootstrap.form-context@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-context/-/react-bootstrap.react-bootstrap.form-context-1.0.0.tgz#1b58fb72194acff6987a5769a7077e2125961ac8"
+  integrity sha1-G1j7chlKz/aYeldppwd+ISWWGsg=
+  dependencies:
+    react-context-toolbox "^2.0.2"
+
+"@bit/react-bootstrap.react-bootstrap.form-control@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-control/-/react-bootstrap.react-bootstrap.form-control-1.0.0.tgz#7546387d85402d5c9f6dab0c6bf0004ce483a4ec"
+  integrity sha1-dUY4fYVALVyfbasMa/AATOSDpOw=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.feedback" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-context" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+    react-context-toolbox "^2.0.2"
+    warning "^4.0.1"
+
+"@bit/react-bootstrap.react-bootstrap.form-group@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-group/-/react-bootstrap.react-bootstrap.form-group-1.0.0.tgz#d5fb5483790a0ce84fc44c017f827cf053c8e1b4"
+  integrity sha1-1ftUg3kKDOhPxEwBf4J88FPI4bQ=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.form-context" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.form-label@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-label/-/react-bootstrap.react-bootstrap.form-label-1.0.0.tgz#268febffe95f37360d58afdaf76d804a0dd81155"
+  integrity sha1-Jo/r/+lfNzYNWK/a922ASg3YEVU=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.col" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-context" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    react-context-toolbox "^2.0.2"
+    warning "^4.0.1"
+
+"@bit/react-bootstrap.react-bootstrap.form-text@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form-text/-/react-bootstrap.react-bootstrap.form-text-1.0.0.tgz#f84d35e487321287b4c0e4990fc74ad2dcdb5c7b"
+  integrity sha1-+E015IcyEoe0wOSZD8dK0tzbXHs=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.form@^1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.form/-/react-bootstrap.react-bootstrap.form-1.0.0.tgz#63b8adac8196491421f634b5707342e32aa1afa0"
+  integrity sha1-Y7itrIGWSRQh9jS1cHNC4yqhr6A=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.create-with-bs-prefix" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-check" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-control" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-group" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-label" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.form-text" "1.0.0"
+    "@bit/react-bootstrap.react-bootstrap.theme-provider" "1.0.0"
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.internal.style-links@^1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.internal.style-links/-/react-bootstrap.react-bootstrap.internal.style-links-1.0.0.tgz#0744bbacc68ea109c159332be641be7f54a3c3b9"
+  integrity sha1-B0S7rMaOoQnBWTMr5kG+f1Sjw7k=
+
+"@bit/react-bootstrap.react-bootstrap.safe-anchor@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.safe-anchor/-/react-bootstrap.react-bootstrap.safe-anchor-1.0.0.tgz#3ee21422deca0845002e9ebb193f567743522782"
+  integrity sha1-PuIUIt7KCEUALp67GT9Wd0NSJ4I=
+  dependencies:
+    "@bit/react-bootstrap.react-bootstrap.create-chained-function" "1.0.0"
+    prop-types "^15.6.2"
+    prop-types-extra "^1.1.0"
+
+"@bit/react-bootstrap.react-bootstrap.theme-provider@1.0.0":
+  version "1.0.0"
+  resolved "https://node.bit.dev/react-bootstrap.react-bootstrap.theme-provider/-/react-bootstrap.react-bootstrap.theme-provider-1.0.0.tgz#2efb9e8785b98187790014117bb8fc3d8086cb77"
+  integrity sha1-Lvueh4W5gYd5ABQRe7j8PYCGy3c=
+  dependencies:
+    prop-types "^15.6.2"
+    react-context-toolbox "^2.0.2"
+
 "@moltin/sdk@^3.18.1":
   version "3.18.1"
   resolved "https://registry.yarnpkg.com/@moltin/sdk/-/sdk-3.18.1.tgz#6a2eeac0ca651238561b395a3a291bf592cdfa24"
@@ -275,6 +452,7 @@ arrify@^1.0.0, arrify@^1.0.1:
 asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+  integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
 
 asn1.js@^4.0.0:
   version "4.9.2"
@@ -369,6 +547,14 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
 
 axobject-query@^0.1.0:
   version "0.1.0"
@@ -1448,6 +1634,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@4.1.x:
   version "4.1.9"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
@@ -1682,6 +1873,7 @@ copy-descriptor@^0.1.0:
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.3"
@@ -1929,6 +2121,13 @@ debug@^3.0.1, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
+  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
+  dependencies:
+    ms "^2.1.1"
+
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -2112,6 +2311,13 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
+dom-helpers@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
+  integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+
 dom-serializer@0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
@@ -2229,6 +2435,7 @@ encodeurl@~1.0.1:
 encoding@^0.1.11:
   version "0.1.12"
   resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
+  integrity sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
   dependencies:
     iconv-lite "~0.4.13"
 
@@ -2777,8 +2984,9 @@ fb-watchman@^2.0.0:
     bser "^2.0.0"
 
 fbjs@^0.8.16:
-  version "0.8.16"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
+  version "0.8.17"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
+  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
   dependencies:
     core-js "^1.0.0"
     isomorphic-fetch "^2.1.1"
@@ -2786,7 +2994,7 @@ fbjs@^0.8.16:
     object-assign "^4.1.0"
     promise "^7.1.1"
     setimmediate "^1.0.5"
-    ua-parser-js "^0.7.9"
+    ua-parser-js "^0.7.18"
 
 fetch-everywhere@^1.0.5:
   version "1.0.5"
@@ -2913,6 +3121,13 @@ flat-cache@^1.2.1:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+follow-redirects@^1.3.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
+  integrity sha512-m/pZQy4Gj287eNy94nivy5wchN3Kp+Q5WgUPNy5lJSZ3sgkVKSYV/ZChMAQVIgx1SqfZ2zBZtPA2YlXIWxxJOQ==
+  dependencies:
+    debug "^3.2.6"
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -3462,9 +3677,16 @@ husky@^0.14.3:
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
 
-iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@~0.4.13:
+iconv-lite@0.4.19, iconv-lite@^0.4.17:
   version "0.4.19"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
+
+iconv-lite@~0.4.13:
+  version "0.4.24"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+  integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
 
 icss-replace-symbols@^1.1.0:
   version "1.1.0"
@@ -3845,6 +4067,7 @@ is-root@1.0.0:
 is-stream@^1.0.0, is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+  integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
 
 is-svg@^2.0.0:
   version "2.1.0"
@@ -3901,6 +4124,7 @@ isobject@^3.0.0, isobject@^3.0.1:
 isomorphic-fetch@^2.1.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
   dependencies:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
@@ -4316,6 +4540,12 @@ js-base64@^2.1.9:
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
+  integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
+
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
 js-yaml@^3.4.3, js-yaml@^3.7.0, js-yaml@^3.9.0, js-yaml@^3.9.1:
   version "3.10.0"
@@ -4742,7 +4972,14 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
+
+loose-envify@^1.2.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -4973,6 +5210,11 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+  integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
+
 multicast-dns-service-types@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/multicast-dns-service-types/-/multicast-dns-service-types-1.1.0.tgz#899f11d9686e5e05cb91b35d5f0e63b773cfc901"
@@ -5032,6 +5274,7 @@ no-case@^2.2.0:
 node-fetch@^1.0.1:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
+  integrity sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
@@ -5196,6 +5439,7 @@ oauth-sign@~0.8.1, oauth-sign@~0.8.2:
 object-assign@4.1.1, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 object-copy@^0.1.0:
   version "0.1.0"
@@ -5905,16 +6149,34 @@ promise@8.0.1:
 promise@^7.1.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
+  integrity sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.9, prop-types@^15.6.0:
+prop-types-extra@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/prop-types-extra/-/prop-types-extra-1.1.0.tgz#32609910ea2dcf190366bacd3490d5a6412a605f"
+  integrity sha512-QFyuDxvMipmIVKD2TwxLVPzMnO4e5oOf1vr3tJIomL8E7d0lr6phTHd5nkPhFIzTD1idBLLEPeylL9g+rrTzRg==
+  dependencies:
+    react-is "^16.3.2"
+    warning "^3.0.0"
+
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.9:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
+
+prop-types@^15.6.0, prop-types@^15.6.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
 
 proxy-addr@~2.0.2:
   version "2.0.2"
@@ -6036,6 +6298,11 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-context-toolbox@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-context-toolbox/-/react-context-toolbox-2.0.2.tgz#35637287cb23f801e6ed802c2bb7a97e1f04e3fb"
+  integrity sha512-tY4j0imkYC3n5ZlYSgFkaw7fmlCp3IoQQ6DxpqeNHzcD0hf+6V+/HeJxviLUZ1Rv1Yn3N3xyO2EhkkZwHn0m1A==
+
 react-dev-utils@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.0.tgz#425ac7c9c40c2603bc4f7ab8836c1406e96bb473"
@@ -6060,17 +6327,23 @@ react-dev-utils@^5.0.0:
     text-table "0.2.0"
 
 react-dom@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
+  integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.13.6"
 
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-is@^16.3.2, react-is@^16.8.1:
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
+  integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
 react-redux@^5.0.5:
   version "5.0.6"
@@ -6159,13 +6432,14 @@ react-scripts@1.1.0:
     fsevents "1.1.2"
 
 react@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
+  integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.13.6"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -6293,6 +6567,11 @@ regenerate@^1.2.1:
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.2.tgz#32e59c9a6fb9b1a4aff09b4930ca2d4477343447"
+  integrity sha512-S/TQAZJO+D3m9xeN1WTI8dLKBBiRgXBlTJvbWjCThHWZj9EvHK70Ff50/tYj2J/fvBY6JtFVwRuazHN2E7M9BA==
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
@@ -6589,6 +6868,11 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
+"safer-buffer@>= 2.1.2 < 3":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
+  integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+
 sane@~1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/sane/-/sane-1.6.0.tgz#9610c452307a135d29c1fdfe2547034180c46775"
@@ -6604,6 +6888,14 @@ sane@~1.6.0:
 sax@^1.2.1, sax@^1.2.4, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+
+scheduler@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
+  integrity sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 schema-utils@^0.3.0:
   version "0.3.0"
@@ -6709,6 +7001,7 @@ set-value@^2.0.0:
 setimmediate@^1.0.4, setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
+  integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
 
 setprototypeof@1.0.3:
   version "1.0.3"
@@ -7349,9 +7642,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-ua-parser-js@^0.7.9:
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
+ua-parser-js@^0.7.18:
+  version "0.7.19"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
+  integrity sha512-T3PVJ6uz8i0HzPxOF9SWzWAlfN/DavlpQqepn22xgve/5QecC+XMCAtmUNnY7C9StehaV6exjUCI801lOI7QlQ==
 
 uglify-js@3.3.x, uglify-js@^3.0.13:
   version "3.3.9"
@@ -7583,6 +7877,13 @@ warning@^3.0.0:
   dependencies:
     loose-envify "^1.0.0"
 
+warning@^4.0.1:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
+
 watch@~0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/watch/-/watch-0.10.0.tgz#77798b2da0f9910d595f1ace5b0c2258521f21dc"
@@ -7709,9 +8010,14 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
   dependencies:
     iconv-lite "0.4.19"
 
-whatwg-fetch@2.0.3, whatwg-fetch@>=0.10.0:
+whatwg-fetch@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
+
+whatwg-fetch@>=0.10.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
+  integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
 
 whatwg-url@^4.3.0:
   version "4.8.0"

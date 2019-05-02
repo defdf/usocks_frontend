@@ -13,6 +13,8 @@ import NotFound from './global/NotFound';
 // import MobileNav from './global/Mobile/MobileNav';
 import Footer from './global/Footer';
 
+import FormContainer from "./userform/UserForm";
+
 const App = props => (
   <div>
     {/* <MobileNav /> */}
@@ -21,6 +23,7 @@ const App = props => (
       <Route exact path="/" component={Home} />
       <Route path="/cart" component={Cart} />
       <Route path="/styles" component={StylesContainer} />
+      <Route path="/userform" component={FormContainer} />
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
       <Route
