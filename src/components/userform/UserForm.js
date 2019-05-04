@@ -4,11 +4,16 @@ import Button from '@bit/react-bootstrap.react-bootstrap.button';
 import ReactBootstrapStyle from '@bit/react-bootstrap.react-bootstrap.internal.style-links';
 import handleSubmit from "redux-form/es/handleSubmit";
 import Axios from 'axios';
+import { Route, Switch } from "react-router-dom";
+import Home from "../Home/Home";
+import HomeMainSection from "../Home/HomeMainSection";
 
 
 const axios = require('axios');
+var isFinish = false;
 
 class UserForm extends Component {
+
 
 
 /*
@@ -80,6 +85,8 @@ class UserForm extends Component {
 
 
 
+       /*
+
         axios.post('http://35.228.53.104:3000/users', {
             username: username,
             email: email,
@@ -94,6 +101,31 @@ class UserForm extends Component {
                 alert("Error: " +error)
             });
 
+*/
+
+
+
+
+
+
+
+/*
+        fetch('http://35.228.53.104:3000/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: username,
+                email: email,
+                password: password
+            })
+        }) */
+
+
+        isFinish = true;
+
+
 
        // alert("Username: " +username.toString()+ "-----Email: " +email +"-----Password: "+password);
 
@@ -104,6 +136,8 @@ class UserForm extends Component {
        // alert((this.state.email))
         event.preventDefault();
 
+
+        this.render();
 
 
 
@@ -127,26 +161,9 @@ class UserForm extends Component {
         });
     }
 
-        /*
-            handleSuccess(event){
-
-                var username = this.state.username;
-                var email = this.state.email;
-                var password = this.state.password;
-
-
-                alert("Username: " +username.toString()+ "-----Email: " +email +"-----Password: "+password);
-            }
-
-            */
-
-        /*
 
 
 
-
-
-         */ /*
 
 
 
@@ -155,78 +172,51 @@ class UserForm extends Component {
 
 
     render() {
-        return (
-            <Form  onSubmit={this.handleSubmit} onChange={this.changeHandler}>
+
+        if (!isFinish) {
+            return (
+                <form onSubmit={this.handleSubmit}>
+                    Username
+                    <input type="text"
+                           name="username"
+                           value={this.state.formControls.username.value}
+                           onChange={this.changeHandler}
+                    />
+
+                    Email
+
+                    <input type="email"
+                           name="email"
+                           value={this.state.formControls.email.value}
+                           onChange={this.changeHandler}
+                    />
 
 
-
-                <Form.Group controlId="formUsername">
-                    <Form.Label>Username</Form.Label>
-                    <Form.Control type="text" placeholder="Username" value={this.state.formControls.username.value}    />
-                </Form.Group>
-
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Email" value={this.state.formControls.email.value}  />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
-
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" value={this.state.formControls.password.value} />
-                </Form.Group>
+                    Password
+                    <input type="password"
+                           name="password"
+                           value={this.state.formControls.password.value}
+                           onChange={this.changeHandler}
+                    />
 
 
+                    <Button variant="primary" type="submit">
+                        Submit
+
+                    </Button>
+
+                </form>
 
 
+            );
+        } else {
+        }
+        return(
 
+        <HomeMainSection/> )
 
-                <Button variant="primary" type="submit">
-                    Submit
-
-                </Button>
-            </Form>
-        )
     }
-}*/
 
-    render() {
-        return (
-            <form  onSubmit={this.handleSubmit}>
-                Username
-                <input type="text"
-                       name="username"
-                       value={this.state.formControls.username.value}
-                       onChange={this.changeHandler}
-                />
-
-                Email
-
-                <input type="email"
-                       name="email"
-                       value={this.state.formControls.email.value}
-                       onChange={this.changeHandler}
-                />
-
-
-                Password
-                <input type="password"
-                       name="password"
-                       value={this.state.formControls.password.value}
-                       onChange={this.changeHandler}
-                />
-
-
-                <Button variant="primary" type="submit">
-                    Submit
-
-                </Button>
-
-            </form>
-        );
-    }
 
 }
 

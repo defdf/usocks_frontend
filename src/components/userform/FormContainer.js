@@ -15,15 +15,12 @@ class FormContainer extends Component {
             newUser: {
                 username: "",
                 email: "",
-                gender: "",
-                password: "",
-                about: ""
+                password: ""
             },
 
-            genderOptions: ["Male", "Female", "Others"],
-            skillOptions: ["Programming", "Development", "Design", "Testing"]
+
         };
-        this.handleTextArea = this.handleTextArea.bind(this);
+
         this.handleEmail = this.handleEmail.bind(this);
         this.handleUsername = this.handleUsername.bind(this);
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -74,19 +71,7 @@ class FormContainer extends Component {
         );
     }
 
-    handleTextArea(e) {
-        console.log("Inside handleTextArea");
-        let value = e.target.value;
-        this.setState(
-            prevState => ({
-                newUser: {
-                    ...prevState.newUser,
-                    about: value
-                }
-            }),
-            () => console.log(this.state.newUser)
-        );
-    }
+
 
     handlePassword(e) {
         let value = e.target.value;
@@ -104,8 +89,9 @@ class FormContainer extends Component {
     handleFormSubmit(e) {
         e.preventDefault();
         let userData = this.state.newUser;
-
         alert(userData);
+
+
 
         fetch("http://example.com", {
             method: "POST",
@@ -122,14 +108,15 @@ class FormContainer extends Component {
     }
 
     handleClearForm(e) {
+        alert(userData);
         e.preventDefault();
         this.setState({
             newUser: {
                 username: "",
                 email: "",
-                gender: "",
+
                 password: "",
-                about: ""
+
             }
         });
     }
@@ -145,7 +132,7 @@ class FormContainer extends Component {
                     placeholder={"Enter your username"}
                     handleChange={this.handleInput}
                 />{" "}
-                {/* username */}
+                {}
                 <Input
                     inputType={"email"}
                     name={"email"}
@@ -154,16 +141,7 @@ class FormContainer extends Component {
                     placeholder={"Enter your email"}
                     handleChange={this.handleInput()}
                 />{" "}
-                {/* Age */}
-                <Select
-                    title={"Gender"}
-                    name={"gender"}
-                    options={this.state.genderOptions}
-                    value={this.state.newUser.gender}
-                    placeholder={"Select Gender"}
-                    handleChange={this.handleInput}
-                />{" "}
-                {/* Age Selection */}
+
                 <Input
                     inputType={"password"}
                     name={"password"}
@@ -172,30 +150,23 @@ class FormContainer extends Component {
                     placeholder={"Enter a password"}
                     handleChange={this.handlePassword}
                 />{" "}
-                {/* Skill */}
-                <TextArea
-                    title={"About you."}
-                    rows={10}
-                    value={this.state.newUser.about}
-                    name={"currentPetInfo"}
-                    handleChange={this.handleTextArea}
-                    placeholder={"Describe your past experience and skills"}
-                />
-                {/* About you */}
-                <Button
+
+
+                {}
+                <Button onclick={this.handleFormSubmit}
                     action={this.handleFormSubmit}
                     type={"primary"}
                     title={"Submit"}
                     style={buttonStyle}
                 />{" "}
-                {/*Submit */}
+                {}
                 <Button
                     action={this.handleClearForm}
                     type={"secondary"}
                     title={"Clear"}
                     style={buttonStyle}
                 />{" "}
-                {/* Clear the form */}
+                {}
             </form>
         );
     }

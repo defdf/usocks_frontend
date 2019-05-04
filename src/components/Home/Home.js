@@ -11,7 +11,11 @@ import { GetProducts } from '../../ducks/products';
 import { GetCategories } from '../../ducks/categories';
 import { GetCollections } from '../../ducks/collections';
 
+
 class Home extends Component {
+
+
+
   componentWillMount() {
     const script = document.createElement('script');
 

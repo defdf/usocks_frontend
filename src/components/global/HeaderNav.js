@@ -4,12 +4,17 @@ import logo from '../../assets/img/logo/USocks_Logo.png';
 import CartCounter from '../Cart/CartCounter';
 
 const HeaderNav = () => (
+
   <div className="nav-container">
     <nav className="primary-nav light">
+        <Link to="/loginform">Log in</Link>
       <Link to="/products">Products</Link>
       <Link to="/styles">Styles</Link>
         <Link to="/userform">Register User</Link>
+
     </nav>
+
+
     <div className="logo light">
       <Link to="/" className="logo-link">
         <span className="hide-content">I love lamp</span>

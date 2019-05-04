@@ -13,8 +13,10 @@
     "@bit/react-bootstrap.react-bootstrap.form": "^1.0.0",
     "@moltin/sdk": "^3.18.1",
     "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
     "history": "^4.7.2",
     "react": "^16.2.0",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
@@ -23,7 +25,8 @@
     "react-scripts": "1.1.0",
     "redux": "^3.7.1",
     "redux-form": "7.2.3",
-    "redux-thunk": "2.2.0"
+    "redux-thunk": "2.2.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@bit/react-bootstrap.react-bootstrap.button": "^1.0.0",
@@ -38,9 +41,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-
-  "proxy": "http://localhost:1337"
-
-
+  }
 }

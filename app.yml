@@ -12,3 +12,17 @@ config:
     - git
   runcmd:
     - cd /home/brick && git clone git://github.com/matthew1809/ILoveLamp-React.git && cd ILoveLamp-React && npm install && bash build/ubuntu/14.04/provision.sh
+  cors.config:
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: ['x-csrf-token','authorization','content-type','accept','origin','x-requested-with', 'access-control-allow-origin','x-allowed-header','*']
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: ['*'] // or ['POST', 'GET', 'OPTIONS', 'DELETE', 'PUT', 'PATCH']
+    # Configure requests allowed from specific origins.
+    allowedOrigins: ['https://XXXX/','*']
+    # Sets the Access-Control-Expose-Headers header.
+    exposedHeaders: true // or false
+    # Sets the Access-Control-Max-Age header.
+    maxAge: false // or 1000
+    # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: true // or false

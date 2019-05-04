@@ -13,7 +13,9 @@ import NotFound from './global/NotFound';
 // import MobileNav from './global/Mobile/MobileNav';
 import Footer from './global/Footer';
 
-import FormContainer from "./userform/UserForm";
+import userForm from "./userform/UserForm";
+import Loginform from "./LoginForm/Loginform";
+
 
 const App = props => (
   <div>
@@ -23,7 +25,8 @@ const App = props => (
       <Route exact path="/" component={Home} />
       <Route path="/cart" component={Cart} />
       <Route path="/styles" component={StylesContainer} />
-      <Route path="/userform" component={FormContainer} />
+      <Route path="/userform" component={userForm} />
+      <Route path="/loginform" component={Loginform} />
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
       <Route
