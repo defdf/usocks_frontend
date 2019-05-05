@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TopPicks from './TopPicks';
+import FrontProducts from "../MyProduct/FrontProducts";
 
 class TopPicksContainer extends Component {
   render() {
@@ -7,11 +8,12 @@ class TopPicksContainer extends Component {
       <section className="top-picks">
         <div className="content">
           <h2>Top picks</h2>
-          <div className="product-list">
-            <TopPicks />
+
+
           </div>
-        </div>
+        <FrontProducts/>
       </section>
+
     );
   }
 }

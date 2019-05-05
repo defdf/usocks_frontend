@@ -20,25 +20,7 @@ const HomeHeader = props => (
     <HeaderNav />
       <ControlledCarousel/>
 
-   /*
-    <div className="header-container">
-      <div className="content">
 
-        /*<h1>I love socks. I love quality.</h1>
-        <Link to="/products" className="btn">
-         Usocks Store
-        </Link>
-
-
-
-      </div>
-
-    </div> */
-    /*
-
-    <div className="down-arrow" aria-hidden="true">
-      <span className="arrow"> &#10095; </span>
-    </div> */
   </header>
 );
 
