@@ -15,6 +15,7 @@ import Footer from './global/Footer';
 
 import userForm from "./userform/UserForm";
 import Loginform from "./LoginForm/Loginform";
+import cartTest from "./MyCart/MyCartContainer"
 
 
 const App = props => (
@@ -29,6 +30,7 @@ const App = props => (
       <Route path="/loginform" component={Loginform} />
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
+      <Route path="/cartTest" component={cartTest} />
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}
