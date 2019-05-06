@@ -18,13 +18,14 @@ import Loginform from "./LoginForm/Loginform";
 import cartTest from "./MyCart/MyCartContainer"
 
 
+
 const App = props => (
   <div>
     {/* <MobileNav /> */}
 
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/cart" component={Cart} />
+      <Route path="/cart1" component={Cart} />
       <Route path="/styles" component={StylesContainer} />
       <Route path="/userform" component={userForm} />
       <Route path="/loginform" component={Loginform} />

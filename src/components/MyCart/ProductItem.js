@@ -23,6 +23,7 @@ export default class ProductItem extends React.Component {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
 
+
     render(){
         const { product } = this.props;
         return (
@@ -30,6 +31,9 @@ export default class ProductItem extends React.Component {
                 <div className="card-body">
                     <h4 className="card-title">{product.name}</h4>
                     <p className="card-text">{product.description}</p>
+
+
+                    <img src={product.imgSrc} height="102" width="102" />
                     <h5 className="card-text"><small>price: </small>${product.price}</h5>
                     <span className="card-text">
                <small>Available Quantity: </small>{product.available_quantity}

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { getCartProducts } from './repository';
 import CartItem from './CartItem';
+import ProductItem from "./ProductList";
 
 
 export default class Cart extends React.Component {
@@ -36,39 +37,33 @@ export default class Cart extends React.Component {
         this.setState({products: []});
     };
 
-    render() {
-
-
-      this.componentDidMount();
-      let products = this.state.products;
-      let total = this.state.total;
+  render() {
+    const{products,total} = this.state;
 
 
 
 
 
 
+    return (
 
+      <div className=" container">
+        <h3 className="card-title">Cart</h3>
 
-        return (
+        {products.map((product, index) =><CartItem product={product} remove={this.removeFromCart} key={index}/>)}
 
-          <div className=" container">
-              <h3 className="card-title">Cart</h3>
-
-                products.map((product, index) =>
-                  <CartItem product={this.product} remove={this.removeFromCart} key={this.index}/>)
-
-            { products.length ?
-              <div><h4>
-                  <small>Total Amount: </small>
-                  <span className="float-right text-primary">${total}</span>
-              </h4><hr/></div>: ''}
-            { !products.length ?<h3 className="text-warning">No item on the cart</h3>: ''}
-          <Link to="/checkout">
-              <button className="btn btn-success float-right">Checkout</button></Link>
-          <button className="btn btn-danger float-right" onClick={this.clearCart}
-                  style={{ marginRight: "10px" }}>Clear Cart</button><br/><br/><br/>
-          </div>
-        );
-    }
+        { products.length ?
+          <div><h4>
+            <small>Total Amount: </small>
+            <span className="float-right text-primary">${total}</span>
+          </h4><hr/></div>: ''}
+        { !products.length ?<h3 className="text-warning">No item on the cart</h3>: ''}
+        <Link to="/checkout">
+          <button className="btn btn-success float-right">Checkout</button></Link>
+        <button className="btn btn-danger float-right" onClick={this.clearCart}
+                style={{ marginRight: "10px" }}>Clear Cart</button><br/><br/><br/>
+      </div>
+    );
+  }
 }
+

@@ -16,7 +16,7 @@ var frontTitle= ["Flower Bed Sock","Spring Blossom Sock","Baby Daisy Sock"];
 
 var frontText = ["Let your personality flourish with the Flower Bed socks",
     "Add some sun-powered power to your steps with the Spring Blossom socks",
-    "They may look curious and sweet, but these Baby Daisy socks are as colorful as you can be."];
+    "They may look curious and sweet, but these Baby Daisy socks are as colorful as you can be"];
 
 
 
