@@ -8,6 +8,7 @@ import MobileNav from '../global/Mobile/MobileNav';
 import Loading from '../global/Loading';
 
 import {GetProducts} from '../../ducks/products';
+import ProductList from "../MyCart/ProductList";
 
 class ProductsContainer extends Component {
     componentWillMount() {
@@ -38,7 +39,7 @@ class ProductsContainer extends Component {
                 <div>
                     <MobileNav/>
                     <ProductsHeader/>
-                    <AllProducts/>
+                    <ProductList/>
                 </div>
             );
         } else {

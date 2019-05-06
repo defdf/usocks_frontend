@@ -16,6 +16,7 @@ import Footer from './global/Footer';
 import userForm from "./userform/UserForm";
 import Loginform from "./LoginForm/Loginform";
 import cartTest from "./MyCart/MyCartContainer"
+import ProductList from "./MyCart/ProductList";
 
 
 

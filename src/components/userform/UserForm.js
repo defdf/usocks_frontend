@@ -85,7 +85,7 @@ class UserForm extends Component {
 
 
 
-       /*
+
 
         axios.post('http://35.228.53.104:3000/users', {
             username: username,
@@ -101,7 +101,7 @@ class UserForm extends Component {
                 alert("Error: " +error)
             });
 
-*/
+
 
 
 

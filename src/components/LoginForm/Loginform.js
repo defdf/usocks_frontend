@@ -83,11 +83,27 @@ class Loginform extends Component {
 
 
 
+
+
+
         isFinish = true;
 
 
-        alert("Username: " +username.toString() +"-----Password: "+password);
+        axios.post(`http://35.228.53.104:3000/users/login`,
+          { usernameOrPassword: username, password: password })
+          .then(response => {
+              localStorage.setItem('MyToken',response.data.token);
+              return response.data})
+          .catch(err => Promise.reject('Authentication Failed!'));
 
+        //alert("Username: " +username.toString() +"-----Password: "+password);
+
+
+        axios.get('http://35.228.53.104:3000/users/user1', {
+            headers: {
+                Authorization: 'Bearer ' + localStorage.getItem('MyToken')
+            }
+        })
 
 
 

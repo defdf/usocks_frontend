@@ -11,7 +11,12 @@ class ProductsHeader extends Component {
       <header className="push">
         <div className="nav-container">
           <nav className="primary-nav">
-            <Link to="/products">Products</Link>
+
+            <Link to="/products">Top Sell</Link>
+
+            <Link to="/men">Men</Link>
+            <Link to="/women">Women</Link>
+            <Link to="/child">Child</Link>
             <Link to="/styles">Styles</Link>
           </nav>
           <div className="logo">

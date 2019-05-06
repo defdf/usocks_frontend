@@ -33,7 +33,7 @@ export default class ProductItem extends React.Component {
                     <p className="card-text">{product.description}</p>
 
 
-                    <img src={product.imgSrc} height="102" width="102" />
+                    <img src={product.imgSrc} height="102" width="102" onClick={this.addToCart} />
                     <h5 className="card-text"><small>price: </small>${product.price}</h5>
                     <span className="card-text">
                <small>Available Quantity: </small>{product.available_quantity}

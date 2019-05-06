@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ProductImage from './ProductImage';
+import ProductItem from "../MyCart/ProductList";
+
 
 const isThereACurrencyPrice = product => {
   try {
@@ -23,6 +25,7 @@ const AllProducts = props => {
         <section className="products">
           <div className="content">
             <div className="product-list">
+
               {products.data.map(function(product) {
                 let background;
                 if (product.background_colour) {
