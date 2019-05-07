@@ -17,6 +17,10 @@ import userForm from "./userform/UserForm";
 import Loginform from "./LoginForm/Loginform";
 import cartTest from "./MyCart/MyCartContainer"
 import ProductList from "./MyCart/ProductList";
+import ListMen from "./MyCategories/men/ListMen";
+import MenContainer from "./MyCategories/men/MenContainer";
+import WomenContainer from "./MyCategories/women/WomenContainer";
+import ChildContainer from "./MyCategories/child/ChildContainer";
 
 
 
@@ -33,6 +37,10 @@ const App = props => (
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
       <Route path="/cartTest" component={cartTest} />
+      <Route path="/men" component={MenContainer} />
+      <Route path="/women" component={WomenContainer} />
+      <Route path="/child" component={ChildContainer} />
+
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}
