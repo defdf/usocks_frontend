@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { getCartProducts } from './repository';
 import CartItem from './CartItem';
 import ProductItem from "./ProductList";
+import HeaderNav from "../global/HeaderNav";
+import HomeHeader from "../Home/HomeHeader";
 
 
 export default class Cart extends React.Component {
@@ -30,6 +32,8 @@ export default class Cart extends React.Component {
         localStorage.setItem('cart', JSON.stringify(cart));
         let total = this.state.total - (product.qty * product.price)
         this.setState({products, total});
+
+
     }
 
     clearCart = () => {
@@ -46,6 +50,8 @@ export default class Cart extends React.Component {
 
 
     return (
+
+
 
       <div className=" container">
         <h3 className="card-title">Cart</h3>

@@ -23,7 +23,7 @@ const CartHeader = props => {
         </nav>
         <div className="logo">
           <Link to="/" className="logo-link">
-            <span className="hide-content">I love lamp</span>
+            <span className="hide-content">I</span>
             <div className="big-logo" aria-hidden="true">
               <img src = {logo}/>
             </div>

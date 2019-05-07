@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from './Home/Home';
 import Cart from './Cart/Cart';
+import MyCart from './MyCart/Cart'
 import CheckoutContainer from './Checkout/CheckoutContainer';
 import StylesContainer from './Styles/StylesContainer';
 import ProductsContainer from './Products/ProductsContainer';
@@ -21,7 +22,7 @@ import ListMen from "./MyCategories/men/ListMen";
 import MenContainer from "./MyCategories/men/MenContainer";
 import WomenContainer from "./MyCategories/women/WomenContainer";
 import ChildContainer from "./MyCategories/child/ChildContainer";
-
+import MyCartContainer from "./MyCart/MyCartContainer"
 
 
 const App = props => (
@@ -40,7 +41,7 @@ const App = props => (
       <Route path="/men" component={MenContainer} />
       <Route path="/women" component={WomenContainer} />
       <Route path="/child" component={ChildContainer} />
-
+      <Route path="/mycart" component={MyCart} />
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}
