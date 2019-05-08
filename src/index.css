@@ -49,6 +49,7 @@ nav.primary-nav.light {
 
 
 #cartTitleHeader {
+
     /* Css element for the header of the "view cart" page */
     /* cart/CartHeader.js */
 
@@ -72,6 +73,45 @@ nav.primary-nav.light {
     /* MyCart/Cart.js */
 
     background-color: green;
+}
+
+#loginButton{
+
+    /* Css element for the "Login" button */
+    /* LoginForm/Loginform.js */
+
+
+
+
+    background-color: black !important;
+}
+
+#loginBox{
+
+    /* Css element for the "Login box" (Input fields and button) */
+    /* LoginForm/Loginform.js */
+
+    position: relative;
+    margin-top: 10%;
+}
+
+#RegisterButton{
+
+    /* Css element for the "Register user" button */
+    /* RegisterForm/UserForm.js */
+
+
+    background-color: black !important;
+
+}
+
+#registerBox{
+
+    /* Css element for the "Register box" (Input fields and button) */
+    /* RegisterForm/UserForm.js */
+
+    position: relative;
+    margin-top: 10%;
 }
 
 

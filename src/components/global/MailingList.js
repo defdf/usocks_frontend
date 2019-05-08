@@ -34,9 +34,6 @@ const MailingList = () => (
             id="newsEmail"
             value={this.value}
             type="email"
-
-
-
           />
           <div id='emailButton'>
           <button type="submit" className="submit" onClick={handleClick}>

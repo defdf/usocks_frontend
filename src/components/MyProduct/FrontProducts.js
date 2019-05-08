@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ReactBootstrapStyle from "../userform/UserForm";
+import ReactBootstrapStyle from "../RegisterForm/UserForm";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 

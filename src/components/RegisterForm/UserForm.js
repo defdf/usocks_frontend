@@ -7,6 +7,7 @@ import Axios from 'axios';
 import { Route, Switch } from "react-router-dom";
 import Home from "../Home/Home";
 import HomeMainSection from "../Home/HomeMainSection";
+import HeaderNav from "../global/HeaderNav";
 
 
 const axios = require('axios');
@@ -173,8 +174,11 @@ class UserForm extends Component {
 
     render() {
 
-        if (!isFinish) {
+
             return (
+
+
+              <div id = "registerBox">
                 <form onSubmit={this.handleSubmit}>
                     Username
                     <input type="text"
@@ -200,24 +204,20 @@ class UserForm extends Component {
                     />
 
 
-                    <Button variant="primary" type="submit">
-                        Submit
+
+                    <Button variant="primary" type="submit" id="RegisterButton">
+                        Register
 
                     </Button>
 
                 </form>
+              </div>
 
 
             );
-        } else {
         }
-        return(
-
-        <HomeMainSection/> )
-
-    }
 
 
 }
 
-export default () => (<div><ReactBootstrapStyle /><UserForm /></div>)
+export default UserForm

@@ -14,8 +14,8 @@ import NotFound from './global/NotFound';
 // import MobileNav from './global/Mobile/MobileNav';
 import Footer from './global/Footer';
 
-import userForm from "./userform/UserForm";
-import Loginform from "./LoginForm/Loginform";
+import userForm from "./RegisterForm/UserForm";
+
 import cartTest from "./MyCart/MyCartContainer"
 
 import MenContainer from "./MyCategories/men/MenContainer";
@@ -23,6 +23,8 @@ import WomenContainer from "./MyCategories/women/WomenContainer";
 import ChildContainer from "./MyCategories/child/ChildContainer";
 
 import MyStyleContainer from "./MyStyle/MyStyleContainer";
+import LoginContainer from "./LoginForm/LoginContainer";
+import RegisterContainer from "./RegisterForm/RegisterContainer";
 
 
 const App = props => (
@@ -33,8 +35,8 @@ const App = props => (
       <Route exact path="/" component={Home} />
       <Route path="/cart1" component={Cart} />
       <Route path="/styles" component={StylesContainer} />
-      <Route path="/userform" component={userForm} />
-      <Route path="/loginform" component={Loginform} />
+      <Route path="/myRegister" component={RegisterContainer} />
+      <Route path="/myLogin" component={LoginContainer} />
       <Route path="/products" component={ProductsContainer} />
       <Route path="/checkout" component={CheckoutContainer} />
       <Route path="/cartTest" component={cartTest} />

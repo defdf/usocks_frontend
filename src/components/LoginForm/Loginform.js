@@ -4,6 +4,7 @@ import Button from '@bit/react-bootstrap.react-bootstrap.button';
 import ReactBootstrapStyle from '@bit/react-bootstrap.react-bootstrap.internal.style-links';
 import Home from "../Home/Home";
 import HomeMainSection from "../Home/HomeMainSection"
+import HomeHeader from "../Home/HomeHeader";
 
 
 const axios = require('axios');
@@ -146,8 +147,11 @@ class Loginform extends Component {
 
     render() {
 
+
+
         if (!isFinish) {
             return (
+              <div id = "loginBox">
                 <form onSubmit={this.handleSubmit}>
                     Username
                     <input type="text"
@@ -164,24 +168,21 @@ class Loginform extends Component {
                     />
 
 
-                    <Button variant="primary" type="submit" >
-                        Submit
+
+                    <Button variant="primary" type="submit" id="loginButton">
+                        Login
 
                     </Button>
 
                 </form>
-
+              </div>
 
             );
-        } else{
-
-        return(
-
-            <Home/> )}
+        }
 
     }
 
 
 }
 
-export default () => (<div><ReactBootstrapStyle /><Loginform /></div>)
+export default Loginform
