@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import MailingList from './MailingList';
 import logo_small from '../../assets/img/logo/USocks_Logo_small.png';
 import SearchField from "react-search-field";
-import { Link } from "react-router-dom";
 
 
 const Footer = () => (

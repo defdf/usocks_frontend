@@ -17,13 +17,11 @@ import Footer from './global/Footer';
 import userForm from "./userform/UserForm";
 import Loginform from "./LoginForm/Loginform";
 import cartTest from "./MyCart/MyCartContainer"
-import ProductList from "./MyCart/ProductList";
-import ListMen from "./MyCategories/men/ListMen";
+
 import MenContainer from "./MyCategories/men/MenContainer";
 import WomenContainer from "./MyCategories/women/WomenContainer";
 import ChildContainer from "./MyCategories/child/ChildContainer";
-import MyCartContainer from "./MyCart/MyCartContainer"
-import StyleGallery from "./MyStyle/StyleGallery";
+
 import MyStyleContainer from "./MyStyle/MyStyleContainer";
 
 

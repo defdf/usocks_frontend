@@ -32,16 +32,10 @@ class CartCounter extends Component {
 
     let cart = localStorage.getItem('cart');
     if (!cart) return;
-    getCartProducts(cart).then((products) => {
+    getCartProducts(cart).then((products) =>
 
-       quantity= products.length;}
-
+      quantity = products.length
     )
-
-
-
-
-
 
 
     return (
