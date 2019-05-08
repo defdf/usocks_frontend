@@ -23,6 +23,8 @@ import MenContainer from "./MyCategories/men/MenContainer";
 import WomenContainer from "./MyCategories/women/WomenContainer";
 import ChildContainer from "./MyCategories/child/ChildContainer";
 import MyCartContainer from "./MyCart/MyCartContainer"
+import StyleGallery from "./MyStyle/StyleGallery";
+import MyStyleContainer from "./MyStyle/MyStyleContainer";
 
 
 const App = props => (
@@ -42,6 +44,7 @@ const App = props => (
       <Route path="/women" component={WomenContainer} />
       <Route path="/child" component={ChildContainer} />
       <Route path="/mycart" component={MyCart} />
+      <Route path="/myStyle" component={MyStyleContainer} />
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}

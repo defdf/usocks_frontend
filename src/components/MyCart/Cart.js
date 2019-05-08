@@ -5,6 +5,7 @@ import CartItem from './CartItem';
 import ProductItem from "./ProductList";
 import HeaderNav from "../global/HeaderNav";
 import HomeHeader from "../Home/HomeHeader";
+import CartHeader from "../Cart/CartHeader";
 
 
 export default class Cart extends React.Component {
@@ -53,7 +54,10 @@ export default class Cart extends React.Component {
 
 
 
+
+
       <div className=" container">
+          <CartHeader/>
         <h3 className="card-title">Cart</h3>
 
         {products.map((product, index) =><CartItem product={product} remove={this.removeFromCart} key={index}/>)}

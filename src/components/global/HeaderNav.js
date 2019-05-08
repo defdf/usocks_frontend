@@ -9,7 +9,7 @@ const HeaderNav = () => (
     <nav className="primary-nav light">
         <Link to="/loginform">Log in</Link>
       <Link to="/products">Products</Link>
-      <Link to="/styles">Styles</Link>
+      <Link to="/myStyle">Styles</Link>
         <Link to="/userform">Register User</Link>
 
     </nav>

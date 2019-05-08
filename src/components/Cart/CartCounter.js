@@ -35,6 +35,7 @@ class CartCounter extends Component {
     getCartProducts(cart).then((products) => {
 
        quantity= products.length;}
+
     )
 
 

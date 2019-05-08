@@ -17,11 +17,11 @@ class ProductsHeader extends Component {
             <Link to="/men">Men</Link>
             <Link to="/women">Women</Link>
             <Link to="/child">Child</Link>
-            <Link to="/styles">Styles</Link>
+            <Link to="/myStyle">Styles</Link>
           </nav>
           <div className="logo">
             <Link to="/" className="logo-link">
-              <span className="hide-content">I love lamp</span>
+              <span className="hide-content">I</span>
               <div className="big-logo" aria-hidden="true">
               <img src = {logo}/>
               </div>
