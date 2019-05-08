@@ -5,6 +5,8 @@ import logo from '../../assets/img/logo/USocks_Logo.png';
 
 import CartCounter from '../Cart/CartCounter';
 
+
+
 class ProductsHeader extends Component {
   render() {
     return (
@@ -18,8 +20,14 @@ class ProductsHeader extends Component {
             <Link to="/women">Women</Link>
             <Link to="/child">Child</Link>
             <Link to="/myStyle">Styles</Link>
+
+
+
+
+
           </nav>
           <div className="logo">
+
             <Link to="/" className="logo-link">
               <span className="hide-content">I</span>
               <div className="big-logo" aria-hidden="true">
@@ -56,13 +64,15 @@ class ProductsHeader extends Component {
               </div>
             </Link>
           </div>
+
           <nav className="secondary-nav">
+
             <CartCounter />
           </nav>
         </div>
         <div className="header-container hide-content">
           <div className="content">
-            <h1>Products listing</h1>
+            <h1></h1>
           </div>
         </div>
       </header>

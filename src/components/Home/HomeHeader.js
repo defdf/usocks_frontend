@@ -7,12 +7,13 @@ import * as testHead from '../../assets/img/unique.png';
 import ControlledCarousel from './FrontCarousel'
 var HeaderStyle = {
   backgroundImage: `url(${testHead})`,
-    //backgroundImage: `url(${Header})`,
+  //  backgroundImage: `url(${Header})`,
   backgroundRepeat: 'no-repeat',
   backgroundAttachment: 'scroll',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
-  backgroundOrigin: 'border-box'
+  backgroundOrigin: 'border-box',
+ // backgroundColor:'white'
 };
 
 const HomeHeader = props => (

@@ -1,8 +1,13 @@
 import React, { Fragment } from 'react';
 import MailingList from './MailingList';
 import logo_small from '../../assets/img/logo/USocks_Logo_small.png';
+import SearchField from "react-search-field";
+import { Link } from "react-router-dom";
+
+
 const Footer = () => (
   <Fragment>
+
     <MailingList />
 
     <footer className="push">
@@ -10,22 +15,30 @@ const Footer = () => (
         <div className="footer-content">
           <div className="footer-about">
             <div className="footer-header">
-              <span className="hide-content">I love lamp</span>
+              <span className="hide-content">I</span>
 
 
 
               <img src={logo_small} />
 
 
+
             </div>
             <p>
-              We value you as a customer
+              Search for a product
+              <SearchField
+                placeholder="Search..."
+                onChange={''}
+                searchText=""
+                classNames="test-class"
+              />
             </p>
+
           </div>
           <nav className="footer-links">
             <dl>
               <dt className="footer-header">
-                <span className="hide-content">@ love lamp</span>
+                <span className="hide-content">f</span>
 
 
                 <img src={logo_small} />

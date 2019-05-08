@@ -2,17 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/USocks_Logo.png';
 import CartCounter from '../Cart/CartCounter';
+import SearchField from "react-search-field";
+
+
 
 const HeaderNav = () => (
 
   <div className="nav-container">
+
     <nav className="primary-nav light">
         <Link to="/loginform">Log in</Link>
       <Link to="/products">Products</Link>
       <Link to="/myStyle">Styles</Link>
         <Link to="/userform">Register User</Link>
 
+
     </nav>
+
 
 
     <div className="logo light">
@@ -31,11 +37,14 @@ const HeaderNav = () => (
         <img src = {logo}/>
 
         </div>
+
       </Link>
     </div>
     <nav className="secondary-nav light">
       <CartCounter />
+
     </nav>
+
   </div>
 );
 
