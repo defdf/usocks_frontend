@@ -39,13 +39,15 @@ export default class ProductItem extends React.Component {
                <small>Available Quantity: </small>{product.available_quantity}
              </span>
                     { product.available_quantity > 0 ?
+
                         <div>
-                            <button className="btn btn-sm btn-warning float-right"
-                                    onClick={this.addToCart}>Add to cart</button>
+
+                            <button className="submit" id='addCartButton' onClick={this.addToCart}>Add to cart</button>
+
                             <input type="number" value={this.state.quantity} name="quantity"
                                    onChange={this.handleInputChange} className="float-right"
                                    style={{ width: "60px", marginRight: "10px", borderRadius: "3px"}}/>
-                        </div> :
+                       </div> :
                         <p className="text-danger"> product is out of stock </p>
                     }
                 </div>

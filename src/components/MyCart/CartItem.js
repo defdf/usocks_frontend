@@ -19,7 +19,7 @@ export default class CartItem extends React.Component {
             <h5 className="card-text"><small>price: </small>${product.price}</h5>
             <span className="card-text text-success">
                   <small>Quantity: </small>{product.qty}</span>
-            <button className="btn btn-sm btn-warning float-right"
+            <button className="submit" id='removeMyCartButton'
                     onClick={() => this.props.remove(product)}>Remove from cart</button>
           </div>
         </div>

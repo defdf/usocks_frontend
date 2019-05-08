@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 import HeaderNav from '../global/HeaderNav';
 import * as Header from '../../assets/img/headers/headerpic1.jpg';
-import * as testHead from '../../assets/img/unique.png';
+import * as testHead from '../../assets/img/headers/socksHeader5.png';
 import ControlledCarousel from './FrontCarousel'
 var HeaderStyle = {
   backgroundImage: `url(${testHead})`,
-  //  backgroundImage: `url(${Header})`,
+  //backgroundImage: `url(${Header})`,
   backgroundRepeat: 'no-repeat',
   backgroundAttachment: 'scroll',
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundOrigin: 'border-box',
- // backgroundColor:'white'
+ backgroundColor:'black'
 };
 
 const HomeHeader = props => (

@@ -22,13 +22,8 @@ export default class ProductList extends React.Component {
         <h3 className="card-title">Top Sales</h3><hr/>
         {products.map((product, index) => <ProductItem product={product} key={index}/>)}
         <hr/>
-        <Link to="/checkout">
-          <button className="btn btn-success float-right">Checkout</button>
-        </Link>
-        <Link to="/cart">
-          <button className="btn btn-primary float-right"
-                  style={{  marginRight: "10px" }}>View Cart</button>
-        </Link><br/><br/><br/>
+      
+
       </div>
     );
   }

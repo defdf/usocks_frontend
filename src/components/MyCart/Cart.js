@@ -59,7 +59,7 @@ export default class Cart extends React.Component {
 
       <div className=" container">
           <CartHeader/>
-        <h3 className="card-title">Cart</h3>
+        <h3 className="card-title">----------------</h3>
 
         {products.map((product, index) =><CartItem product={product} remove={this.removeFromCart} key={index}/>)}
 
@@ -70,9 +70,8 @@ export default class Cart extends React.Component {
           </h4><hr/></div>: ''}
         { !products.length ?<h3 className="text-warning">No item on the cart</h3>: ''}
         <Link to="/checkout">
-          <button className="btn btn-success float-right">Checkout</button></Link>
-        <button className="btn btn-danger float-right" onClick={this.clearCart}
-                style={{ marginRight: "10px" }}>Clear Cart</button><br/><br/><br/>
+          <button className="btn btn-success float-right" id='orderButton'  >Proceed with order</button></Link>
+        <br/><br/><br/>
       </div>
     );
   }

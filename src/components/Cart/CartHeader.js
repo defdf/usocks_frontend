@@ -62,9 +62,12 @@ const CartHeader = props => {
           <CartCounter />
         </nav>
       </div>
+
+
       <div className="header-container smaller">
         <div className="content">
-          <h1>{headerText}</h1>
+          <div id='cartTitleHeader'>
+            <h2>{headerText}</h2></div>
         </div>
       </div>
     </header>
