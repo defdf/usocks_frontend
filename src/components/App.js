@@ -23,8 +23,9 @@ import WomenContainer from "./MyCategories/women/WomenContainer";
 import ChildContainer from "./MyCategories/child/ChildContainer";
 
 import MyStyleContainer from "./MyStyle/MyStyleContainer";
-import LoginContainer from "./LoginForm/LoginContainer";
+import LoginContainer from "./MyLogin/LoginContainer";
 import RegisterContainer from "./RegisterForm/RegisterContainer";
+import WelcomeContainer from "./Member/WelcomeContainer";
 
 
 const App = props => (
@@ -45,6 +46,7 @@ const App = props => (
       <Route path="/child" component={ChildContainer} />
       <Route path="/mycart" component={MyCart} />
       <Route path="/myStyle" component={MyStyleContainer} />
+      <Route path="/welcome" component={WelcomeContainer} />
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}

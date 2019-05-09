@@ -5,6 +5,7 @@ import ReactBootstrapStyle from '@bit/react-bootstrap.react-bootstrap.internal.s
 import Home from "../Home/Home";
 import HomeMainSection from "../Home/HomeMainSection"
 import HomeHeader from "../Home/HomeHeader";
+import repoAPI, { login } from "../Repo/repoAPI";
 
 
 const axios = require('axios');
@@ -57,25 +58,11 @@ class Loginform extends Component {
 
 
 
-        /*
-
-         axios.post('http://35.228.53.104:3000/users', {
-             username: username,
-             email: email,
-             password: password
-         })
-             .then(function (response) {
-                 console.log(response);
-                 alert("Response: " +response)
-             })
-             .catch(function (error) {
-                 console.log(error);
-                 alert("Error: " +error)
-             });
-
- */
 
 
+
+
+        login(username,password);
 
 
 
@@ -89,13 +76,17 @@ class Loginform extends Component {
 
         isFinish = true;
 
-
+/*
         axios.post(`http://35.228.53.104:3000/users/login`,
           { usernameOrPassword: username, password: password })
           .then(response => {
               localStorage.setItem('MyToken',response.data.token);
+              localStorage.setItem('MyTokenTime',
+                Date.now() + 2 * 60 * 60 * 1000);
+              localStorage.setItem('currUser',username);
+              window.location = '/';
               return response.data})
-          .catch(err => Promise.reject('Authentication Failed!'));
+          .catch(err => Promise.reject('Authentication Failed!')); */
 
         //alert("Username: " +username.toString() +"-----Password: "+password);
 
@@ -105,6 +96,7 @@ class Loginform extends Component {
                 Authorization: 'Bearer ' + localStorage.getItem('MyToken')
             }
         })
+
 
 
 

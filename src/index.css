@@ -78,7 +78,7 @@ nav.primary-nav.light {
 #loginButton{
 
     /* Css element for the "Login" button */
-    /* LoginForm/Loginform.js */
+    /* MyLogin/Loginform.js */
 
 
 
@@ -89,7 +89,7 @@ nav.primary-nav.light {
 #loginBox{
 
     /* Css element for the "Login box" (Input fields and button) */
-    /* LoginForm/Loginform.js */
+    /* MyLogin/Loginform.js */
 
     position: relative;
     margin-top: 10%;
