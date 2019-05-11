@@ -1,10 +1,24 @@
 import React from 'react';
+import ImageZoom from 'react-medium-image-zoom'
+
+
+
+
+
+
+
+
 
 export default class ProductItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {quantity: 1}
     }
+
+
+
+
+
 
     handleInputChange = event =>
         this.setState({[event.target.name]: event.target.value})
@@ -15,6 +29,7 @@ export default class ProductItem extends React.Component {
         let id = this.props.product.id.toString();
         cart[id] = (cart[id] ? cart[id]: 0);
         let qty = cart[id] + parseInt(this.state.quantity);
+
         if (this.props.product.available_quantity < qty) {
             cart[id] = this.props.product.available_quantity;
         } else {
@@ -23,8 +38,21 @@ export default class ProductItem extends React.Component {
         localStorage.setItem('cart', JSON.stringify(cart));
     }
 
+    goToSingleProduct(){
+
+
+    }
+
+
 
     render(){
+
+
+
+
+
+
+
         const { product } = this.props;
         return (
             <div className="card" style={{ marginBottom: "10px"}}>
@@ -33,8 +61,34 @@ export default class ProductItem extends React.Component {
                     <p className="card-text">{product.description}</p>
 
 
-                    <img src={product.imgSrc} height="102" width="102" onClick={this.addToCart} />
+                    <div id='someid' onClick={this.goToSingleProduct}>
+                      <div>
+
+
+
+                        <ImageZoom hei
+                          image={ {
+                            src: product.imgSrc,
+                            alt: '',
+                            className: 'img',
+                            style: { width: '10em' }
+                          }}
+                          zoomImage={{
+                            src: product.imgSrc,
+                            alt: ''
+                          }}
+                        />
+
+
+
+                      </div>
+                    </div>
                     <h5 className="card-text"><small>price: </small>${product.price}</h5>
+
+
+
+
+
                     <span className="card-text">
                <small>Available Quantity: </small>{product.available_quantity}
              </span>
@@ -52,6 +106,8 @@ export default class ProductItem extends React.Component {
                     }
                 </div>
             </div>
+
+
         )
     }
 }
