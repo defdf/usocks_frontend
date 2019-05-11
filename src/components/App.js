@@ -26,6 +26,9 @@ import MyStyleContainer from "./MyStyle/MyStyleContainer";
 import LoginContainer from "./MyLogin/LoginContainer";
 import RegisterContainer from "./RegisterForm/RegisterContainer";
 import WelcomeContainer from "./Member/WelcomeContainer";
+import PromotionsContainer from "./Member/Promotions/PromotionsContainer";
+import AccountContainer from "./Member/MemberAccount/AccountContainer";
+import MemberOrderContainer from "./Member/MemberOrder/MemberOrderContainer";
 
 
 const App = props => (
@@ -47,6 +50,9 @@ const App = props => (
       <Route path="/mycart" component={MyCart} />
       <Route path="/myStyle" component={MyStyleContainer} />
       <Route path="/welcome" component={WelcomeContainer} />
+      <Route path="/prom" component={PromotionsContainer} />
+      <Route path="/acc" component={AccountContainer} />
+      <Route path="/memOrder" component={MemberOrderContainer} />
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}

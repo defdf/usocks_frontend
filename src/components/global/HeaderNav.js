@@ -2,11 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo/USocks_Logo.png';
 import CartCounter from '../Cart/CartCounter';
+import { isAuthenticated } from "../Repo/repoAPI";
 
 
 
 
 const HeaderNav = () => (
+
+
+
 
   <div className="nav-container">
 
@@ -15,6 +19,7 @@ const HeaderNav = () => (
       <Link to="/products">Products</Link>
       <Link to="/myStyle">Styles</Link>
         <Link to="/myRegister">Register User</Link>
+      <Link to="/welcome">Panel</Link>
 
 
     </nav>

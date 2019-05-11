@@ -16,11 +16,12 @@ export default class WelcomeContainer extends React.Component {
         <div>
 
           <WelcomeHeader/>
-          <h2>Welcome, {localStorage.getItem("currUser")}</h2>
+
 
 
         </div>
-      );
+
+      );<h4>Welcome, {localStorage.getItem("currUser")}</h4>
     } else {
       return (
         <div>

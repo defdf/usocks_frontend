@@ -9,11 +9,16 @@ import ImageZoom from 'react-medium-image-zoom'
 
 
 
+
+
 export default class ProductItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {quantity: 1}
-    }
+
+
+  }
+
 
 
 
@@ -24,11 +29,13 @@ export default class ProductItem extends React.Component {
         this.setState({[event.target.name]: event.target.value})
 
     addToCart = () => {
+
         let cart = localStorage.getItem('cart')
             ? JSON.parse(localStorage.getItem('cart')) : {};
         let id = this.props.product.id.toString();
         cart[id] = (cart[id] ? cart[id]: 0);
         let qty = cart[id] + parseInt(this.state.quantity);
+
 
         if (this.props.product.available_quantity < qty) {
             cart[id] = this.props.product.available_quantity;
@@ -94,17 +101,29 @@ export default class ProductItem extends React.Component {
              </span>
                     { product.available_quantity > 0 ?
 
+
                         <div>
 
-                            <button className="submit" id='addCartButton' onClick={this.addToCart}>Add to cart</button>
+                          <input type="number" value={this.state.quantity} name="quantity"
+                                 onChange={this.handleInputChange} className="float-right"
+                                 style={{ width: "60px", marginRight: "10px", borderRadius: "3px"}}/>
 
-                            <input type="number" value={this.state.quantity} name="quantity"
-                                   onChange={this.handleInputChange} className="float-right"
-                                   style={{ width: "60px", marginRight: "10px", borderRadius: "3px"}}/>
+
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"/>
+                          <div id="first-child">   <button className="submit" id='addCartButton' onClick={this.addToCart}>Add to cart</button>
+                          </div>
+
+
+
+
+
+
                        </div> :
                         <p className="text-danger"> product is out of stock </p>
                     }
                 </div>
+
+
             </div>
 
 

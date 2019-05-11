@@ -19,11 +19,11 @@ import { logout } from "../Repo/repoAPI";
   <header className="push">
 
   <nav className="primary-nav">
-    <Link to="/">Store</Link>
-  <Link to="/">Account</Link>
+    <Link to="/products">Store</Link>
+  <Link to="/acc">Account</Link>
 
-  <Link to="/">Orders</Link>
-  <Link to="/">Promotions</Link>
+  <Link to="/memOrder">Orders</Link>
+  <Link to="/prom">Promotions</Link>
 
 
     <a className="nav-item nav-link" href="/"

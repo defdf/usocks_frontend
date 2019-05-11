@@ -27,8 +27,13 @@ button.btn.btn-sm.btn-warning.float-right {
 #addCartButton {
 
 
+
+
     background-color: black !important;
+
+
 }
+
 
 nav.primary-nav.light {
 
@@ -114,14 +119,20 @@ nav.primary-nav.light {
     margin-top: 10%;
 }
 
-#clickMyImage {
 
 
-    color: #ed1212;
-    cursor: zoom-in;
 
+
+
+
+#selectBox{
+
+    /* Css element for the "Size Select form"  */
+    /* MyCart/CartItem.js */
+
+    height: 1%!important;
+    width:10%;
 }
-
 
 
 

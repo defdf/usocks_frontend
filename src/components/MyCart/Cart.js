@@ -11,13 +11,14 @@ import CartHeader from "../Cart/CartHeader";
 export default class Cart extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { products: [], total: 0 }
+        this.state = { products: [], total: 0,}
     }
 
     componentDidMount() {
         let cart = localStorage.getItem('cart');
         if (!cart) return;
         getCartProducts(cart).then((products) => {
+          let sockS= products.sockSize;
             let total = 0;
             for (var i = 0; i < products.length; i++) {
                 total += products[i].price * products[i].qty;
