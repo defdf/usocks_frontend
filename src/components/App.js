@@ -29,6 +29,7 @@ import WelcomeContainer from "./Member/WelcomeContainer";
 import PromotionsContainer from "./Member/Promotions/PromotionsContainer";
 import AccountContainer from "./Member/MemberAccount/AccountContainer";
 import MemberOrderContainer from "./Member/MemberOrder/MemberOrderContainer";
+import GiftContainer from "./MyCategories/gift/GiftContainer";
 
 
 const App = props => (
@@ -47,6 +48,7 @@ const App = props => (
       <Route path="/men" component={MenContainer} />
       <Route path="/women" component={WomenContainer} />
       <Route path="/child" component={ChildContainer} />
+      <Route path="/gift" component={GiftContainer} />
       <Route path="/mycart" component={MyCart} />
       <Route path="/myStyle" component={MyStyleContainer} />
       <Route path="/welcome" component={WelcomeContainer} />

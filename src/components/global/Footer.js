@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import MailingList from './MailingList';
 import logo_small from '../../assets/img/logo/USocks_Logo_small.png';
 import SearchField from "react-search-field";
+import {searchItem} from './../Repo/repoAPI';
 
 
 const Footer = () => (
@@ -23,15 +24,7 @@ const Footer = () => (
 
 
             </div>
-            <p>
-              Search for a product
-              <SearchField
-                placeholder="Search..."
-                onChange={''}
-                searchText=""
-                classNames="test-class"
-              />
-            </p>
+
 
           </div>
           <nav className="footer-links">

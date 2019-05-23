@@ -8,6 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "../Home/Home";
 import HomeMainSection from "../Home/HomeMainSection";
 import HeaderNav from "../global/HeaderNav";
+import { registerUser } from "../Repo/repoAPI";
 
 
 const axios = require('axios');
@@ -49,6 +50,13 @@ class UserForm extends Component {
         super()
         this.state = {
             formControls: {
+
+                firstName: {
+                    value: ''
+                },
+                lastName: {
+                    value: ''
+                },
                 username: {
                     value: ''
                 },
@@ -79,6 +87,8 @@ class UserForm extends Component {
 
 
 
+        var firstName = this.state.formControls.firstName.value;
+        var lastName = this.state.formControls.lastName.value;
 
        var username = this.state.formControls.username.value;
        var email = this.state.formControls.email.value;
@@ -86,11 +96,18 @@ class UserForm extends Component {
 
 
 
+registerUser(username,email,firstName,lastName,password);
 
 
-        axios.post('http://35.228.53.104:3000/users', {
+
+/*
+
+        axios.post('http://35.228.53.104:3000/user', {
+
             username: username,
             email: email,
+            firstName: firstName,
+            lastName: lastName,
             password: password
         })
             .then(function (response) {
@@ -104,7 +121,7 @@ class UserForm extends Component {
 
 
 
-
+*/
 
 
 
@@ -180,6 +197,24 @@ class UserForm extends Component {
 
               <div id = "registerBox">
                 <form onSubmit={this.handleSubmit}>
+
+                    First Name
+                    <input type="text"
+                           name="firstName"
+                           value={this.state.formControls.firstName.value}
+                           onChange={this.changeHandler}
+                    />
+
+
+                    Last Name
+                    <input type="text"
+                           name="lastName"
+                           value={this.state.formControls.lastName.value}
+                           onChange={this.changeHandler}
+                    />
+
+
+
                     Username
                     <input type="text"
                            name="username"

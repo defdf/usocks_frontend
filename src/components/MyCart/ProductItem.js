@@ -1,5 +1,7 @@
 import React from 'react';
 import ImageZoom from 'react-medium-image-zoom'
+import { getCartProducts } from "./repository";
+import CartCounter from "../Cart/CartCounter";
 
 
 
@@ -15,6 +17,8 @@ export default class ProductItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {quantity: 1}
+
+
 
 
   }
@@ -43,6 +47,12 @@ export default class ProductItem extends React.Component {
             cart[id] = qty
         }
         localStorage.setItem('cart', JSON.stringify(cart));
+
+
+
+
+
+
     }
 
     goToSingleProduct(){
@@ -52,7 +62,13 @@ export default class ProductItem extends React.Component {
 
 
 
-    render(){
+
+
+
+
+
+
+  render(){
 
 
 
@@ -75,7 +91,7 @@ export default class ProductItem extends React.Component {
 
                         <ImageZoom hei
                           image={ {
-                            src: product.imgSrc,
+                            src: product.image_url,
                             alt: '',
                             className: 'img',
                             style: { width: '10em' }
@@ -112,6 +128,7 @@ export default class ProductItem extends React.Component {
                           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"/>
                           <div id="first-child">   <button className="submit" id='addCartButton' onClick={this.addToCart}>Add to cart</button>
                           </div>
+
 
 
 

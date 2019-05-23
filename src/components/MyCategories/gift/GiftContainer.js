@@ -6,11 +6,13 @@ import ProductsHeader from './../../Products/ProductsHeader';
 import MobileNav from './../../global/Mobile/MobileNav';
 import Loading from './../../global/Loading';
 
-import {getProducts} from '../../Repo/repoAPI';
-import ListMen from './ListMen';
+import {GetProduct} from '../../MyCart/repository';
 
 
-export default class ProductsContainer_Men extends Component {
+import ListGift from "./ListGift";
+
+
+export default class ProductsContainer_Gift extends Component {
 
 
   render() {
@@ -25,7 +27,7 @@ export default class ProductsContainer_Men extends Component {
         <div>
           <MobileNav/>
           <ProductsHeader/>
-          <ListMen/>
+          <ListGift/>
         </div>
       );
     } else {

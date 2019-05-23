@@ -121,10 +121,27 @@ nav.primary-nav.light {
 
 
 
+.primary-nav.light{
+
+
+}
+
+nav.primary-nav.light{
+
+color: black ;
+
+}
 
 
 
+.broken-body .light .scrolled .logo-link:link, .broken-body .light .scrolled .logo-link:visited, .broken-body .light .scrolled a:link, .broken-body .light .scrolled a:visited, .broken-body footer a:link, .broken-body footer a:visited, .light .nav-container:not(.scrolled) .logo .logo-link:link, .light .nav-container:not(.scrolled) .logo .logo-link:visited, .light .nav-container:not(.scrolled) .primary-nav a:link, .light .nav-container:not(.scrolled) .primary-nav a:visited, .light .nav-container:not(.scrolled) .secondary-nav a:link, .light .nav-container:not(.scrolled) .secondary-nav a:visited{
 
+
+    color:black;
+}
+
+
+nav-container.scrolled{}
 #selectBox{
 
     /* Css element for the "Size Select form"  */

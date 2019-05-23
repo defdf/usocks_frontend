@@ -4,15 +4,21 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 
+
 import { getCartProducts } from "../MyCart/repository";
 var quantity;
+function restartCounter(event) {
+
+  this.setState = { products: [], total: 1 }
+}
 class CartCounter extends Component {
 
 
   constructor(props) {
     super(props);
-    this.state = { products: [], total: 0 }
+    this.state = { products: [], total: 1 }
   }
+
 
   componentDidMount() {
     let cart = localStorage.getItem('cart');
@@ -26,8 +32,12 @@ class CartCounter extends Component {
     });
   }
 
+
+
+
+
   render() {
-    ;
+
 
 
     let cart = localStorage.getItem('cart');

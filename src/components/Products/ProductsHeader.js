@@ -19,6 +19,7 @@ class ProductsHeader extends Component {
             <Link to="/men">Men</Link>
             <Link to="/women">Women</Link>
             <Link to="/child">Child</Link>
+            <Link to="/gift">Gift</Link>
             <Link to="/myStyle">Styles</Link>
 
 

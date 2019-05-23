@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductItem from './../../MyCart/ProductItem';
-import { getProducts } from './../../MyCart/repository';
+import { getProducts_KID } from './../../Repo/repoAPI';
 import { Link } from 'react-router-dom';
 
 export default class ListChild extends React.Component {
@@ -18,7 +18,7 @@ export default class ListChild extends React.Component {
    // {products.map((product, index) => <ProductItem product={product} key={index}/>)}
    */
   componentDidMount() {
-    getProducts().then((products) =>this.setState({ products }));
+    getProducts_KID().then((products) =>this.setState({ products }));
   }
 
   render() {
@@ -30,9 +30,9 @@ export default class ListChild extends React.Component {
 
         <div>
           {products.map((product) =>   {
-            if (product.cat === "kid") {
+
               return <ProductItem product={product} key/>
-            }
+            
 
 
 

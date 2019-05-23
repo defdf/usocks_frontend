@@ -14,12 +14,15 @@ const HeaderNav = () => (
 
   <div className="nav-container">
 
+
     <nav className="primary-nav light">
         <Link to="/MyLogin">Log in</Link>
       <Link to="/products">Products</Link>
       <Link to="/myStyle">Styles</Link>
         <Link to="/myRegister">Register User</Link>
       <Link to="/welcome">Panel</Link>
+
+
 
 
     </nav>
@@ -37,6 +40,7 @@ const HeaderNav = () => (
         <img src = {logo}/>
 
         </div>
+
 
       </Link>
     </div>

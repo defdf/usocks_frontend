@@ -3,6 +3,7 @@ import product from './ProductItem'
 import MyCartContainer from "./MyCartContainer";
 
 import Select from 'react-select';
+import CartCounter from "../Cart/CartCounter";
 
 const options = [
 
@@ -19,6 +20,7 @@ export default class CartItem extends React.Component {
     this.state = {quantity: 0};
     this.state = {selectedOption: 'L',}
   }
+
 
 
   handleChange = (selectedOption) => {
@@ -43,7 +45,7 @@ export default class CartItem extends React.Component {
                                        options={options}
           />
             <button className="submit" id='removeMyCartButton'
-                    onClick={() => this.props.remove(product)}>Remove from cart</button>
+                    onClick={() => this.props.remove(product) && this.render()}  >Remove from cart</button>
           </div>
         </div>
       )
