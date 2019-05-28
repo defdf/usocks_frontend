@@ -1,10 +1,11 @@
 import React from 'react';
 import ImageZoom from 'react-medium-image-zoom'
-import { getCartProducts } from "./repository";
-import CartCounter from "../Cart/CartCounter";
+import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
+import frontIMG1 from "../../assets/img/socks/hs1.png";
 
 
-
+let testQuan = 1; // Used for testing design with a static 1 as product quantity
 
 
 
@@ -78,7 +79,15 @@ export default class ProductItem extends React.Component {
 
         const { product } = this.props;
         return (
-            <div className="card" style={{ marginBottom: "10px"}}>
+
+
+
+
+
+
+
+
+          <div className="card" style={{ marginBottom: "10px"}}>
                 <div className="card-body">
                     <h4 className="card-title">{product.name}</h4>
                     <p className="card-text">{product.description}</p>
@@ -104,9 +113,11 @@ export default class ProductItem extends React.Component {
 
 
 
+
                       </div>
                     </div>
                     <h5 className="card-text"><small>price: </small>${product.price}</h5>
+
 
 
 

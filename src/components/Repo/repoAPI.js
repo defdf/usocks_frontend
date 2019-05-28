@@ -2,6 +2,9 @@ const BASE_URL = "http://35.228.53.104:3000";
 const axios = require("axios");
 
 
+// User releated functions
+
+
 // get token and token time from Local storage. ( If token is non existing or if the time has expired user is not auth)
 export function isAuthenticated() {
   return localStorage.getItem("MyToken") && localStorage.getItem("MyTokenTime") > Date.now();
@@ -55,6 +58,8 @@ export function registerUser(username, email, firstName, lastName, password) {
 
 }
 
+
+
 // Product calls
 
 export function getProducts() {
@@ -87,9 +92,54 @@ export function getProducts_GIFT() {
 export function searchItem(value) {
 
 
-  return axios.get(`${BASE_URL}/sock/search/`+value)
+  return axios.get(`${BASE_URL}/sock/search/` + value)
     .then(response => response.data);
 
 }
+
+// Order calls
+
+export function createOrder(username, dateTime, totalPrice, item) {
+
+
+  axios.post(`${BASE_URL}/user/` + username + "/order/",
+    {
+
+      dateTime: dateTime,
+
+      totalPrice: totalPrice,
+      items: [
+        {
+          id: item.id,
+          qty: item.qty,
+          unitPrice: item.unitPrice
+        }]
+    })
+    .then(function(response) {
+      console.log(response);
+      alert("Response: " + response);
+    })
+    .catch(function(error) {
+      console.log(error);
+      alert("Error: " + error);
+    });
+
+
+}
+
+export function getAllOrders(username) {
+
+  return axios.get(`${BASE_URL}/user/` + username + `/order`)
+    .then(response => response.data);
+}
+
+export function getOneOrder(username, orderId) {
+
+  return axios.get(`${BASE_URL}/user/` + username + `/order/` + orderId)
+    .then(response => response.data);
+}
+
+
+
 
 
