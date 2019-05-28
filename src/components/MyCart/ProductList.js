@@ -22,7 +22,7 @@ export default class ProductList extends React.Component {
   render() {
     const { products } =  this.state;
     return (
-      <div className=" container">
+      <div className=" top-picks">
         <h3 className="card-title">Top Sales</h3><hr/>
         {products.map((product, index) => <ProductItem product={product} key={index}  />
 

@@ -87,9 +87,23 @@ export default class ProductItem extends React.Component {
 
 
 
-          <div className="card" style={{ marginBottom: "10px"}}>
+          <div className="card" id='myProductCard' style={{ marginBottom: "10px"}}>
+
                 <div className="card-body">
                     <h4 className="card-title">{product.name}</h4>
+                  <ImageZoom hei
+                             image={ {
+                               src: product.image_url,
+                               alt: '',
+                               className: 'img',
+                               style: { width: '10em' }
+                             }}
+                             zoomImage={{
+                               src: product.imgSrc,
+                               alt: ''
+                             }}
+                  />
+                  <h5 className="card-text"><small>Price </small>${product.price}</h5>
                     <p className="card-text">{product.description}</p>
 
 
@@ -98,25 +112,14 @@ export default class ProductItem extends React.Component {
 
 
 
-                        <ImageZoom hei
-                          image={ {
-                            src: product.image_url,
-                            alt: '',
-                            className: 'img',
-                            style: { width: '10em' }
-                          }}
-                          zoomImage={{
-                            src: product.imgSrc,
-                            alt: ''
-                          }}
-                        />
+
 
 
 
 
                       </div>
                     </div>
-                    <h5 className="card-text"><small>price: </small>${product.price}</h5>
+
 
 
 

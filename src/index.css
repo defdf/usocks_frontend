@@ -4,6 +4,15 @@ body {
     font-family: sans-serif;
 }
 
+.small-logo{
+    background-image: url("assets/img/logo/USocks_Logo_small.png");
+    border-style: dashed ;
+    border-color: green;
+
+    border-width: 5px;
+
+    display:none;
+}
 
 .footer-header {
 
@@ -12,7 +21,15 @@ body {
 
 }
 
+.card-text{
 
+
+}
+
+#myProductCard{
+display: inline-block;
+
+}
 .header {
 
     color: black;
