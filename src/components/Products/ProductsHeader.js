@@ -20,6 +20,7 @@ class ProductsHeader extends Component {
             <Link to="/women">Women</Link>
             <Link to="/child">Child</Link>
             <Link to="/gift">Gift</Link>
+            <Link to="/search">Search</Link>
             <Link to="/myStyle">Styles</Link>
 
 

@@ -30,6 +30,8 @@ import PromotionsContainer from "./Member/Promotions/PromotionsContainer";
 import AccountContainer from "./Member/MemberAccount/AccountContainer";
 import MemberOrderContainer from "./Member/MemberOrder/MemberOrderContainer";
 import GiftContainer from "./MyCategories/gift/GiftContainer";
+import Search from "./MySearch/Search";
+import SearchContainer from "./MyCategories/Search/SearchContainer";
 
 
 const App = props => (
@@ -54,6 +56,7 @@ const App = props => (
       <Route path="/welcome" component={WelcomeContainer} />
       <Route path="/prom" component={PromotionsContainer} />
       <Route path="/acc" component={AccountContainer} />
+      <Route path="/search" component={SearchContainer} />
       <Route path="/memOrder" component={MemberOrderContainer} />
       <Route
         path="/order-confirmation"
