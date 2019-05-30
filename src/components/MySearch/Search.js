@@ -41,7 +41,7 @@ export default class Search extends React.Component {
 
     return (
       <div>
-        <h3>Usocks - Product Search</h3>
+        <h3>Usocks - Search</h3>
         <div>
           <input
             type="text"

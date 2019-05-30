@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Home/Home';
 import Cart from './Cart/Cart';
 import MyCart from './MyCart/Cart'
-import CheckoutContainer from './Checkout/CheckoutContainer';
+import CheckoutContainer from './MyCheckout/CheckoutContainer';
 import StylesContainer from './Styles/StylesContainer';
 import ProductsContainer from './Products/ProductsContainer';
 import SingleProductContainer from './Products/SingleProductContainer';
@@ -58,6 +58,7 @@ const App = props => (
       <Route path="/acc" component={AccountContainer} />
       <Route path="/search" component={SearchContainer} />
       <Route path="/memOrder" component={MemberOrderContainer} />
+      <Route path="/myCheckout" component={CheckoutContainer} />
       <Route
         path="/order-confirmation"
         component={OrderConfirmationContainer}

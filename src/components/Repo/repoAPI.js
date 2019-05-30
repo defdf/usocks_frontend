@@ -1,5 +1,10 @@
+
+import axios from 'axios';
 const BASE_URL = "http://35.228.53.104:3000";
-const axios = require("axios");
+
+var config = {
+  headers: {'Authorization': "bearer " + localStorage.getItem('MyToken')}
+};
 
 
 // User releated functions
@@ -99,29 +104,49 @@ export function searchItem(value) {
 
 // Order calls
 
-export function createOrder(username, dateTime, totalPrice, item) {
+export function createOrder(totalPrice, cart) {
+
+alert('in create order');
+
+
+
+
+
+  let username = localStorage.getItem('currUser');
+
+  let items=[];
+  let cartSocksIds = Object.keys(cart);
+  for(let i=0; i<cartSocksIds.length; i++){
+    let sockId = cartSocksIds[i];
+    let quantity = cart[sockId];
+    let item = {
+      id: sockId,
+      qty: quantity,
+      unitPrice: 50
+    };
+
+    items.push(item);
+  }
+
+
 
 
   axios.post(`${BASE_URL}/user/` + username + "/order/",
     {
 
-      dateTime: dateTime,
+      dateTime:  Date.now(),
 
       totalPrice: totalPrice,
-      items: [
-        {
-          id: item.id,
-          qty: item.qty,
-          unitPrice: item.unitPrice
-        }]
-    })
+       items
+    },config)
     .then(function(response) {
       console.log(response);
-      alert("Response: " + response);
+      //alert("Response: " + response);
+      window.location = "/myCheckout";
     })
     .catch(function(error) {
       console.log(error);
-      alert("Error: " + error);
+      alert("Something went wrong: " + error);
     });
 
 
@@ -139,6 +164,20 @@ export function getOneOrder(username, orderId) {
     .then(response => response.data);
 }
 
+
+// Cart functions
+
+export function getCartProducts(cart) {
+
+
+  //alert(cart);
+
+
+  return axios.post(`${BASE_URL}/sock/getWithPost/`, {cart})
+    .then(response => response.data);
+
+
+}
 
 
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import ImageZoom from 'react-medium-image-zoom'
-import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
-import frontIMG1 from "../../assets/img/socks/hs1.png";
 
 
-let testQuan = 1; // Used for testing design with a static 1 as product quantity
+
+
+
 
 
 
@@ -22,7 +21,9 @@ export default class ProductItem extends React.Component {
 
 
 
+
   }
+
 
 
 
@@ -38,28 +39,45 @@ export default class ProductItem extends React.Component {
         let cart = localStorage.getItem('cart')
             ? JSON.parse(localStorage.getItem('cart')) : {};
         let id = this.props.product.id.toString();
+
+        cart[id] = (cart[id] ? cart[id]: 0);
+        let qtyLocal = cart[id] + parseInt(this.state.quantity);
+
+
+
+
+
+        if (this.props.product.qty < qtyLocal) {
+            cart[id] = this.props.product.qty;
+        } else {
+            cart[id] = qtyLocal
+        }
+
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+
+
+
+    }
+
+
+/*
+
+addToCart = () => {
+        let cart = localStorage.getItem('cart')
+            ? JSON.parse(localStorage.getItem('cart')) : {};
+        let id = this.props.product.id.toString();
         cart[id] = (cart[id] ? cart[id]: 0);
         let qty = cart[id] + parseInt(this.state.quantity);
-
-
         if (this.props.product.available_quantity < qty) {
             cart[id] = this.props.product.available_quantity;
         } else {
             cart[id] = qty
         }
         localStorage.setItem('cart', JSON.stringify(cart));
-
-
-
-
-
-
     }
-
-    goToSingleProduct(){
-
-
-    }
+ */
 
 
 
@@ -93,7 +111,7 @@ export default class ProductItem extends React.Component {
                     <h4 className="card-title">{product.name}</h4>
                   <ImageZoom hei
                              image={ {
-                               src: product.image_url,
+                               src: product.imageUrl,
                                alt: '',
                                className: 'img',
                                style: { width: '10em' }
@@ -127,20 +145,21 @@ export default class ProductItem extends React.Component {
 
 
                     <span className="card-text">
-               <small>Available Quantity: </small>{product.available_quantity}
+               <small>Available Quantity: </small>{product.qty}
              </span>
-                    { product.available_quantity > 0 ?
+                    { product.qty > 0 ?
 
 
                         <div>
 
-                          <input type="number" value={this.state.quantity} name="quantity"
-                                 onChange={this.handleInputChange} className="float-right"
-                                 style={{ width: "60px", marginRight: "10px", borderRadius: "3px"}}/>
+
 
 
                           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"/>
                           <div id="first-child">   <button className="submit" id='addCartButton' onClick={this.addToCart}>Add to cart</button>
+                            <input type="number" value={this.state.quantity} name="quantity"
+                                   onChange={this.handleInputChange} className="float-right"
+                                   style={{ width: "60px", marginRight: "10px", borderRadius: "3px"}}/>
                           </div>
 
 

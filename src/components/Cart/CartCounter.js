@@ -5,22 +5,21 @@ import { Link } from 'react-router-dom';
 
 
 
-import { getCartProducts } from "../MyCart/repository";
+import { getCartProducts } from './../Repo/repoAPI';
 var quantity;
-function restartCounter(event) {
 
-  this.setState = { products: [], total: 1 }
-}
 class CartCounter extends Component {
 
 
   constructor(props) {
     super(props);
-    this.state = { products: [], total: 1 }
+    this.state = { products: [], total: 0 }
   }
 
 
   componentDidMount() {
+
+
     let cart = localStorage.getItem('cart');
     if (!cart) return;
     getCartProducts(cart).then((products) => {
@@ -33,38 +32,41 @@ class CartCounter extends Component {
   }
 
 
-
-
-
   render() {
 
 
 
-    let cart = localStorage.getItem('cart');
-    if (!cart) return;
-    getCartProducts(cart).then((products) =>
-
-      quantity = products.length
-    )
 
 
-    return (
-      <Link to="/mycart" className="cart" aria-live="polite">
-        <span className="cart-name" aria-hidden="true">
-          Cart (
-        </span>
-        <span className="hide-content">The cart contains </span>
-        <span className="cart-count">{quantity}</span>
-        <span className="hide-content">items</span>
-        <span className="cart-name" aria-hidden="true">
-          )
-        </span>
-      </Link>
-    );
-  }
+
+
+
+      let cart = localStorage.getItem('cart');
+      if (!cart) return;
+      getCartProducts(cart).then((products) =>
+
+        quantity = products.length
+      )
+
+
+
+      return (
+        <Link to="/mycart" className="cart" aria-live="polite">
+            <span className="cart-name" aria-hidden="true">
+              Cart (
+            </span>
+          <span className="hide-content">The cart contains </span>
+          <span className="cart-count">{quantity}</span>
+          <span className="hide-content">items</span>
+          <span className="cart-name" aria-hidden="true">
+              )
+            </span>
+        </Link>
+      );
+    }
+
+
 }
-
-
 
 
 export default CartCounter;
