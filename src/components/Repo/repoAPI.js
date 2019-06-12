@@ -6,6 +6,8 @@ var config = {
   headers: {'Authorization': "bearer " + localStorage.getItem('MyToken')}
 };
 
+var token = "Bearer "+ localStorage.getItem('MyToken');
+
 
 // User releated functions
 
@@ -137,7 +139,7 @@ alert('in create order');
       dateTime:  Date.now(),
 
       totalPrice: totalPrice,
-       items
+      Items:items
     },config)
     .then(function(response) {
       console.log(response);
@@ -154,13 +156,17 @@ alert('in create order');
 
 export function getAllOrders(username) {
 
-  return axios.get(`${BASE_URL}/user/` + username + `/order`)
-    .then(response => response.data);
+  return axios.get(`${BASE_URL}/user/` + username + `/order`,{ headers: { 'Authorization': token} })
+    .then(response => response.data
+
+    ).then(function(response){localStorage.setItem("orderHistory",JSON.stringify(response))});
+
+
 }
 
 export function getOneOrder(username, orderId) {
 
-  return axios.get(`${BASE_URL}/user/` + username + `/order/` + orderId)
+  return axios.get(`${BASE_URL}/user/` + username + `/order/` + orderId,config)
     .then(response => response.data);
 }
 
