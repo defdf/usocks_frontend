@@ -91,6 +91,7 @@ class Loginform extends Component {
         //alert("Username: " +username.toString() +"-----Password: "+password);
 
 
+        /*
         axios.get('http://35.228.53.104:3000/users/user1', {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('MyToken')
@@ -100,7 +101,7 @@ class Loginform extends Component {
 
 
 
-
+*/
 
 
 

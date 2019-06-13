@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { getCartProducts } from '../Repo/repoAPI';
-import {createOrder} from '../Repo/repoAPI';
+
+import { getCartProducts, createOrder } from "../Repo/repoAPI";
+
 import CartItem from './CartItem';
-import ProductItem from "./ProductList";
-import HeaderNav from "../global/HeaderNav";
-import HomeHeader from "../Home/HomeHeader";
+
 import CartHeader from "../Cart/CartHeader";
 
 
@@ -73,7 +71,7 @@ export default class Cart extends React.Component {
     removeFromCart = (product) => {
         let products = this.state.products.filter((item) => item.id !== product.id);
         let cart = JSON.parse(localStorage.getItem('cart'));
-        delete cart[product.id.toString()];
+      delete cart[product.id];
         localStorage.setItem('cart', JSON.stringify(cart));
         let total = this.state.total - (product.qty * product.price)
         this.setState({products, total});
@@ -83,21 +81,61 @@ export default class Cart extends React.Component {
 
     clearCart = () => {
 
-        this.setState({products: []});
+
+      this.setState({ products: [], total: 0 });
+
 
     };
 
 
     checkoutOrder(){
 
+      let items = [];
 
 
-
+      alert(localStorage.getItem("cart"));
 
       let cart = JSON.parse(localStorage.getItem('cart'));
       let totalPrice = localStorage.getItem('totalPrice');
 
-      createOrder(totalPrice,cart);
+
+      getCartProducts(cart).then((products) => {
+
+
+        let total = 0;
+        for (var i = 0; i < products.length; i++) {
+
+
+          total += products[i].price * products[i].qty;
+
+
+          let item = {
+            id: i + 1,
+            qty: products[i].qty,
+            unitPrice: products[i].price
+          };
+          items.push(item);
+          // alert(i+" Price :"+products[i].price.toString());
+          //alert(i+" quantity :"+products[i].qty.toString());
+
+        }
+
+        /*
+
+                for (var i = 0; i < items.length; i++) {
+                  alert("Price (items)"+i+": " +items[i].unitPrice);
+                  alert("Quantity(items)"+i+": " +items[i].qty);
+                  alert("ID(items)"+i+": " +items[i].id);
+                  //Do something
+                }
+        */
+
+        createOrder(totalPrice, cart, items);
+
+      });
+
+
+      // createOrder(totalPrice,cart,items);
 
 
 

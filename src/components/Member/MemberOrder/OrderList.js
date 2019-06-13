@@ -3,6 +3,7 @@ import { TablePlain } from "@dccs/react-table-plain";
 import { getAllOrders } from "../../Repo/repoAPI";
 
 
+
 var orderData;
 
 export default class OrderList extends React.Component{
@@ -12,32 +13,32 @@ export default class OrderList extends React.Component{
     this.state = {
       orders: []
     }
+    this.componentWillMount();
   }
 
 
-  componentDidMount() {
-   getAllOrders(localStorage.getItem('currUser')).then((orders) =>this.setState({ orders: [] }));
+  componentWillMount() {
+
+
+    getAllOrders(localStorage.getItem("currUser")).then((orders) => this.setState({ orders: [] }));
 
     orderData = JSON.parse(localStorage.getItem("orderHistory"));
 
 
+
   }
 
 
 
 
-  
+
 
 
 
   render() {
 
 
-
     return (
-
-
-
 
       <TablePlain
         data={orderData}
@@ -45,6 +46,7 @@ export default class OrderList extends React.Component{
           {
             prop: "id",
             header: "Order_ID"
+
           },
           {
             prop: "dateTime",
@@ -57,7 +59,7 @@ export default class OrderList extends React.Component{
           },
           {
             prop: "user_username",
-            header: "Order_Status"
+            header: "Username"
           }
         ]}
 
@@ -66,7 +68,11 @@ export default class OrderList extends React.Component{
 
 
 
+
+
+
     );
+
   }}
 
 

@@ -45,7 +45,7 @@ class CartCounter extends Component {
       if (!cart) return;
       getCartProducts(cart).then((products) =>
 
-        quantity = products.length
+        quantity = products.length - 1
       )
 
 

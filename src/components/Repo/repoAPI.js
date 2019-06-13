@@ -1,12 +1,12 @@
+import axios from "axios";
 
-import axios from 'axios';
 const BASE_URL = "http://35.228.53.104:3000";
 
 var config = {
-  headers: {'Authorization': "bearer " + localStorage.getItem('MyToken')}
+  headers: { "Authorization": "bearer " + localStorage.getItem("MyToken") }
 };
 
-var token = "Bearer "+ localStorage.getItem('MyToken');
+var token = "Bearer " + localStorage.getItem("MyToken");
 
 
 // User releated functions
@@ -22,6 +22,7 @@ export function logout() {
 
   localStorage.removeItem("MyToken");
   localStorage.removeItem("currUser");
+  localStorage.removeItem("orderHistory");
 
 }
 
@@ -66,7 +67,6 @@ export function registerUser(username, email, firstName, lastName, password) {
 }
 
 
-
 // Product calls
 
 export function getProducts() {
@@ -106,21 +106,39 @@ export function searchItem(value) {
 
 // Order calls
 
-export function createOrder(totalPrice, cart) {
-
-alert('in create order');
+export function createOrder(totalPrice, cart, items) {
 
 
+  alert("in create order");
+  alert(cart);
 
 
+  for (var i = 0; i < items.length; i++) {
+    alert("Price (items)" + i + ": " + items[i].unitPrice);
+    alert("Quantity(items)" + i + ": " + items[i].qty);
+    alert("ID(items)" + i + ": " + items[i].id);
+    //Do something
+  }
 
-  let username = localStorage.getItem('currUser');
 
+  let data = {
+    dateTime: Date.now(),
+    totalPrice: totalPrice,
+    items: items
+  };
+
+  alert("totalPrice: " + totalPrice);
+  let username = localStorage.getItem("currUser");
+
+
+  /*
   let items=[];
   let cartSocksIds = Object.keys(cart);
   for(let i=0; i<cartSocksIds.length; i++){
     let sockId = cartSocksIds[i];
     let quantity = cart[sockId];
+
+    alert(sockId);
     let item = {
       id: sockId,
       qty: quantity,
@@ -129,21 +147,14 @@ alert('in create order');
 
     items.push(item);
   }
-
-
+*/
 
 
   axios.post(`${BASE_URL}/user/` + username + "/order/",
-    {
-
-      dateTime:  Date.now(),
-
-      totalPrice: totalPrice,
-      Items:items
-    },config)
+    (data), config)
     .then(function(response) {
       console.log(response);
-      //alert("Response: " + response);
+      alert("Response: " + response);
       window.location = "/myCheckout";
     })
     .catch(function(error) {
@@ -156,18 +167,22 @@ alert('in create order');
 
 export function getAllOrders(username) {
 
-  return axios.get(`${BASE_URL}/user/` + username + `/order`,{ headers: { 'Authorization': token} })
+  return axios.get(`${BASE_URL}/user/` + username + `/order`, { headers: { "Authorization": token } })
     .then(response => response.data
-
-    ).then(function(response){localStorage.setItem("orderHistory",JSON.stringify(response))});
+    ).then(function(response) {
+      localStorage.setItem("orderHistory", JSON.stringify(response));
+    });
 
 
 }
 
 export function getOneOrder(username, orderId) {
 
-  return axios.get(`${BASE_URL}/user/` + username + `/order/` + orderId,config)
-    .then(response => response.data);
+  return axios.get(`${BASE_URL}/user/` + username + `/order/` + orderId, { headers: { "Authorization": token } })
+    .then(response => response.data
+    ).then(function(response) {
+      localStorage.setItem("orderDetails", JSON.stringify(response));
+    });
 }
 
 
@@ -179,7 +194,7 @@ export function getCartProducts(cart) {
   //alert(cart);
 
 
-  return axios.post(`${BASE_URL}/sock/getWithPost/`, {cart})
+  return axios.post(`${BASE_URL}/sock/getWithPost/`, { cart })
     .then(response => response.data);
 
 
